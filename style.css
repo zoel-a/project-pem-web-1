@@ -198,7 +198,7 @@ button {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    /* background-color: aqua; */
+    background-color: aqua;
 }
 
 .wrapper .contact-info {
