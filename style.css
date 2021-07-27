@@ -108,3 +108,9 @@ button {
   align-items: center;
 }
 /* Akhir dari Jumbotron */
+
+/* About */
+.sub-container .row-col .col {
+  width: 30rem;
+}
+/* Akhir dari About */
