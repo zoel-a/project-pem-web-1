@@ -179,3 +179,45 @@ button {
   max-width: 100%;
 }
 /* Akhir dari Gallery */
+
+/* Contact */
+.contact .sub-container {
+  background-color: #494949;
+}
+.row-contact {
+  display: flex;
+  justify-content: center;
+}
+.row-contact form {
+  display: flex;
+  width: 30rem;
+  flex-direction: column;
+}
+.col-contact {
+  display: flex;
+  flex-direction: column;
+}
+.col-contact > *,
+.btn {
+  margin: 10px;
+  padding: 5px;
+}
+.col-contact label {
+  padding: 0;
+}
+.col-contact input,
+.btn {
+  font-size: 1rem;
+}
+textarea {
+  resize: vertical;
+}
+.btn {
+  padding: 10px;
+  width: 75px;
+  background-color: #0d6efd;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+/* Akhir dari Contact */
