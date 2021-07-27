@@ -1,318 +1,318 @@
    * {
-   margin: 0;
-   padding: 0;
-   }
-   body {
-   font-size: 18px;
-   background-image: url(img/background.png);
-   font-family: Arial, Helvetica, sans-serif;
-   }
-   h2 {
-   font-size: 3rem;
-   }
-   h3 {
-   font-size: 2rem;
-   }
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 18px;
+    background-image: url(img/background.png);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2rem;
+}
 
-   /* Container */
-   .container {
-   display: grid;
-   }
-   section .sub-container {
-   padding: 15rem 0;
-   }
-   .sub-container .row {
-   text-align: center;
-   margin-bottom: 50px;
-   }
-   .sub-container .row-col .col {
-   display: block;
-   text-align: justify;
-   }
-   .sub-container .row-col {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
-   }
+/* Container */
+.container {
+    display: grid;
+}
+section .sub-container {
+    padding: 15rem 0;
+}
+.sub-container .row {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.sub-container .row-col .col {
+    display: block;
+    text-align: justify;
+}
+.sub-container .row-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
-   /* Navigasi */
-   nav {
-   width: 100%;
-   }
-   .menu .container-menu {
-   background-image: linear-gradient(to right, #00d4ff, #0f0f9d, #020024);
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 15px 25px;
-   }
-   .container-menu .brand {
-   padding: 3px;
-   text-align: center;
-   font-size: 1.5em;
-   color: white;
-   }
-   .container-menu .menu-list {
-   list-style: none;
-   display: flex;
-   gap: 15px;
-   }
-   .container-menu a {
-   display: block;
-   color: white;
-   text-decoration: none;
-   text-align: center;
-   text-transform: uppercase;
-   font-size: 0.8em;
-   }
-   .menu-list {
-   display: flex;
-   }
-   .menu-list a {
-   padding: 5px;
-   }
-   .search {
-   display: flex;
-   }
-   form > * {
-   padding: 8px 5px;
-   border: none;
-   }
-   form button,
-   button {
-   cursor: pointer;
-   }
-   /* Akhir dari Navigasi */
+/* Navigasi */
+nav {
+    width: 100%;
+}
+.menu .container-menu {
+    background-image: linear-gradient(to right, #00d4ff, #0f0f9d, #020024);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+}
+.container-menu .brand {
+    padding: 3px;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+.container-menu .menu-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+.container-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+.menu-list {
+    display: flex;
+}
+.menu-list a {
+    padding: 5px;
+}
+.search {
+    display: flex;
+}
+form > * {
+    padding: 8px 5px;
+    border: none;
+}
+form button,
+button {
+    cursor: pointer;
+}
+/* Akhir dari Navigasi */
 
-   /* Jumbotron */
-   .jumbotron-container .profil {
-   text-align: center;
-   padding: 15rem 1rem;
-   background-image: url(img/coop.jpg);
-   background-size: cover;
-   background-position: center;
-   }
-   .jumbotron-container .profil > * {
-   margin: 10px;
-   }
-   .jumbotron-container .profil img {
-   border-radius: 50%;
-   border: 3px solid #ddd;
-   padding: 5px;
-   background-size: cover;
-   background-position: center;
-   }
-   .jumbotron-container .sub-container {
-   display: flex;
-   flex: 1;
-   align-items: center;
-   }
-   /* Akhir dari Jumbotron */
+/* Jumbotron */
+.jumbotron-container .profil {
+    text-align: center;
+    padding: 15rem 1rem;
+    background-image: url(img/coop.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.jumbotron-container .profil > * {
+    margin: 10px;
+}
+.jumbotron-container .profil img {
+    border-radius: 50%;
+    border: 3px solid #ddd;
+    padding: 5px;
+    background-size: cover;
+    background-position: center;
+}
+.jumbotron-container .sub-container {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+/* Akhir dari Jumbotron */
 
-   /* About */
-   .sub-container .row-col .col {
-   width: 30rem;
-   }
-   /* Akhir dari About */
+/* About */
+.sub-container .row-col .col {
+    width: 30rem;
+}
+/* Akhir dari About */
 
-   /* Products */
-   .header .sub-container {
-   padding: 15rem 5rem;
-   display: flex;
-   flex-direction: column;
-   gap: 50px;
-   }
-   .header .sub-container .row {
-   text-align: right;
-   }
-   .header .sub-container .hero-container {
-   min-height: 400px;
-   background-image: url(img/mk1.jpg);
-   background-size: cover;
-   background-position: center;
-   border: 5px solid chocolate;
-   }
-   .header .sub-container .hero-container .hero {
-   padding: 15rem 5rem;
-   text-align: right;
-   }
-   .header .sub-container .products {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   background-size: cover;
-   background-position: center;
-   gap: 50px;
-   }
-   .features {
-   color: black;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   text-align: center;
-   gap: 5px;
-   }
-   .features img {
-   border: 5px solid chocolate;
-   margin-bottom: 15px;
-   }
-   .features .price {
-   font-size: 2em;
-   font-weight: 200;
-   }
-   .info {
-   background-color: goldenrod;
-   margin-top: 15px;
-   padding: 10px;
-   font-size: 1.2rem;
-   width: 110px;
-   border: none;
-   border-radius: 5px;
-   }
-   /* Akhir dari Products */
+/* Products */
+.header .sub-container {
+    padding: 15rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.header .sub-container .row {
+    text-align: right;
+}
+.header .sub-container .hero-container {
+    min-height: 400px;
+    background-image: url(img/mk1.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 5px solid chocolate;
+}
+.header .sub-container .hero-container .hero {
+    padding: 15rem 5rem;
+    text-align: right;
+}
+.header .sub-container .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+    gap: 50px;
+}
+.features {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+.features img {
+    border: 5px solid chocolate;
+    margin-bottom: 15px;
+}
+.features .price {
+    font-size: 2em;
+    font-weight: 200;
+}
+.info {
+    background-color: goldenrod;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 110px;
+    border: none;
+    border-radius: 5px;
+}
+/* Akhir dari Products */
 
-   /* Gallery */
-   .gallery .sub-container .row-col .col {
-   border: 5px solid blueviolet;
-   }
-   .gallery .sub-container .row-col img {
-   max-width: 100%;
-   }
-   /* Akhir dari Gallery */
+/* Gallery */
+.gallery .sub-container .row-col .col {
+    border: 5px solid blueviolet;
+}
+.gallery .sub-container .row-col img {
+    max-width: 100%;
+}
+/* Akhir dari Gallery */
 
-   /* Contact */
-   .contact {
-      width: 100%;
-      height: auto;
-      background-color: black;
-      padding: 10px;
-   }
+/* Contact */
+.contact {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding: 10px;
+}
 
-   .contact .wrapper {
-      width: 35cm;
-      height: auto;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      /* background-color: aqua; */
-   }
+.contact .wrapper {
+    width: 35cm;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
 
-   .wrapper .contact-info {
-      display: flex;
-      width: 20cm;
-      height: 300px;
-      justify-content: space-between;
-   }
+.wrapper .contact-info {
+    display: flex;
+    width: 20cm;
+    height: 300px;
+    justify-content: space-between;
+}
 
-   .contact-info .slot-info {
-      background-color: violet;
-      width: 200px;
-      height: 200px;
-   }
+.contact-info .slot-info {
+    background-color: violet;
+    width: 200px;
+    height: 200px;
+}
 
-   .wrapper .subscribe {
-      width: 300px;
-      height: 200px;
-      background-color: violet;
-   }
+.wrapper .subscribe {
+    width: 300px;
+    height: 200px;
+    background-color: violet;
+}
 
-   /* Akhir dari Contact */
+/* Akhir dari Contact */
 
-   /* Footer */
-   footer {
-   text-align: center;
-   background-image: linear-gradient(to right, #00d4ff, #0f0f9d, #020024);
-   color: white;
-   padding: 10px;
-   }
-   /* Akhir dari Footer */
+/* Footer */
+footer {
+    text-align: center;
+    background-image: linear-gradient(to right, #00d4ff, #0f0f9d, #020024);
+    color: white;
+    padding: 10px;
+}
+/* Akhir dari Footer */
 
-   /* Icon Hamburger Menu */
-   .menu-toggle {
-   display: none;
-   flex-direction: column;
-   height: 20px;
-   justify-content: space-between;
-   position: relative;
-   }
-   .menu-toggle span {
-   display: block;
-   width: 24px;
-   height: 3px;
-   background-color: white;
-   border-radius: 3px;
-   transition: all 0.5s;
-   }
-   .menu-toggle input {
-   display: block;
-   position: absolute;
-   background-color: black;
-   width: 40px;
-   height: 28px;
-   left: -8px;
-   top: -4px;
-   cursor: pointer;
-   opacity: 0;
-   z-index: 2;
-   }
-   /* Akhir dari Icon Hamburger Menu */
+/* Icon Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+.menu-toggle input {
+    display: block;
+    position: absolute;
+    background-color: black;
+    width: 40px;
+    height: 28px;
+    left: -8px;
+    top: -4px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+/* Akhir dari Icon Hamburger Menu */
 
-   /* Responsive Breakpoint */
+/* Responsive Breakpoint */
 
-   /* Layar Setengah */
-   @media (max-width: 1330px) {
-   .search {
-      display: none;
-   }
-   }
+/* Layar Setengah */
+@media (max-width: 1330px) {
+    .search {
+        display: none;
+    }
+}
 
-   /* Layar Tablet */
-   @media (max-width: 768px) {
-   }
-   /* Layar Mobile */
-   @media (max-width: 500px) {
-   .sub-container .row-col {
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-   }
-   .products .features {
-      display: flex;
-      flex-direction: column;
-   }
-   .features {
-      display: flex;
-      flex-direction: column;
-   }
-   .features .price {
-      font-size: 1.5em;
-   }
-
-   /* Hamburger Menu */
-
-   .menu-toggle {
-      display: flex;
-      align-items: flex-end;
-   }
-   nav ul {
-      position: absolute;
-      right: 0;
-      height: 100vh;
-      top: 0;
-      background-color: cornflowerblue;
-      width: 80%;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      z-index: -1;
-      transform: translateX(100%);
-      opacity: 0;
-      transition: all 1s;
-   }
-   nav ul.slide {
-      opacity: 1;
-      transform: translateX(0);
-   }
-   /* Akhir dari Hamburger Menu */
-   }
-   /* Akhir dari Responsive Break Point */
+/* Layar Tablet */
+@media (max-width: 768px) {
+}
+/* Layar Mobile */
+@media (max-width: 500px) {
+    .sub-container .row-col {
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .products .features {
+        display: flex;
+        flex-direction: column;
+    }
+    .features {
+        display: flex;
+        flex-direction: column;
+    }
+    .features .price {
+        font-size: 1.5em;
+    }
+    
+    /* Hamburger Menu */
+    
+    .menu-toggle {
+        display: flex;
+        align-items: flex-end;
+    }
+    nav ul {
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        top: 0;
+        background-color: cornflowerblue;
+        width: 80%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: -1;
+        transform: translateX(100%);
+        opacity: 0;
+        transition: all 1s;
+    }
+    nav ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    /* Akhir dari Hamburger Menu */
+}
+/* Akhir dari Responsive Break Point */
