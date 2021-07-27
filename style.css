@@ -83,3 +83,28 @@ button {
   cursor: pointer;
 }
 /* Akhir dari Navigasi */
+
+/* Jumbotron */
+.jumbotron-container .profil {
+  text-align: center;
+  padding: 15rem 1rem;
+  background-image: url(img/coop.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.jumbotron-container .profil > * {
+  margin: 10px;
+}
+.jumbotron-container .profil img {
+  border-radius: 50%;
+  border: 3px solid #ddd;
+  padding: 5px;
+  background-size: cover;
+  background-position: center;
+}
+.jumbotron-container .sub-container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+/* Akhir dari Jumbotron */
