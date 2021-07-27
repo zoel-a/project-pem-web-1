@@ -13,3 +13,24 @@ h2 {
 h3 {
   font-size: 2rem;
 }
+
+/* Container */
+.container {
+  display: grid;
+}
+section .sub-container {
+  padding: 15rem 0;
+}
+.sub-container .row {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.sub-container .row-col .col {
+  display: block;
+  text-align: justify;
+}
+.sub-container .row-col {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
