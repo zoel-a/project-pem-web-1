@@ -230,3 +230,33 @@ footer {
   padding: 10px;
 }
 /* Akhir dari Footer */
+
+/* Icon Hamburger Menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+.menu-toggle span {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+.menu-toggle input {
+  display: block;
+  position: absolute;
+  background-color: black;
+  width: 40px;
+  height: 28px;
+  left: -8px;
+  top: -4px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+/* Akhir dari Icon Hamburger Menu */
