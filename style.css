@@ -260,3 +260,63 @@ footer {
   z-index: 2;
 }
 /* Akhir dari Icon Hamburger Menu */
+
+/* Responsive Breakpoint */
+
+/* Layar Setengah */
+@media (max-width: 1330px) {
+  .search {
+    display: none;
+  }
+}
+
+/* Layar Tablet */
+@media (max-width: 768px) {
+}
+/* Layar Mobile */
+@media (max-width: 500px) {
+  .sub-container .row-col {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .products .features {
+    display: flex;
+    flex-direction: column;
+  }
+  .features {
+    display: flex;
+    flex-direction: column;
+  }
+  .features .price {
+    font-size: 1.5em;
+  }
+
+  /* Hamburger Menu */
+
+  .menu-toggle {
+    display: flex;
+    align-items: flex-end;
+  }
+  nav ul {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    top: 0;
+    background-color: cornflowerblue;
+    width: 80%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: -1;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 1s;
+  }
+  nav ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  /* Akhir dari Hamburger Menu */
+}
+/* Akhir dari Responsive Break Point */
