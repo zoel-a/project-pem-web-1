@@ -114,3 +114,59 @@ button {
   width: 30rem;
 }
 /* Akhir dari About */
+
+/* Products */
+.header .sub-container {
+  padding: 15rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.header .sub-container .row {
+  text-align: right;
+}
+.header .sub-container .hero-container {
+  min-height: 400px;
+  background-image: url(img/mk1.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 5px solid chocolate;
+}
+.header .sub-container .hero-container .hero {
+  padding: 15rem 5rem;
+  text-align: right;
+}
+.header .sub-container .products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+  gap: 50px;
+}
+.features {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+.features img {
+  border: 5px solid chocolate;
+  margin-bottom: 15px;
+}
+.features .price {
+  font-size: 2em;
+  font-weight: 200;
+}
+.info {
+  background-color: goldenrod;
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 1.2rem;
+  width: 110px;
+  border: none;
+  border-radius: 5px;
+}
+/* Akhir dari Products */
