@@ -34,3 +34,52 @@ section .sub-container {
   flex-direction: row;
   justify-content: space-evenly;
 }
+
+/* Navigasi */
+nav {
+  width: 100%;
+}
+.menu .container-menu {
+  background-image: linear-gradient(to right, #00d4ff, #0f0f9d, #020024);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+}
+.container-menu .brand {
+  padding: 3px;
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+}
+.container-menu .menu-list {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+.container-menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+.menu-list {
+  display: flex;
+}
+.menu-list a {
+  padding: 5px;
+}
+.search {
+  display: flex;
+}
+form > * {
+  padding: 8px 5px;
+  border: none;
+}
+form button,
+button {
+  cursor: pointer;
+}
+/* Akhir dari Navigasi */
