@@ -170,3 +170,12 @@ button {
   border-radius: 5px;
 }
 /* Akhir dari Products */
+
+/* Gallery */
+.gallery .sub-container .row-col .col {
+  border: 5px solid blueviolet;
+}
+.gallery .sub-container .row-col img {
+  max-width: 100%;
+}
+/* Akhir dari Gallery */
