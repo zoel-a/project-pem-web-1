@@ -9,9 +9,11 @@ body {
     background-image: url(img/background.png);
     font-family: Arial, Helvetica, sans-serif;
 }
+/* Style pada Header 2 */
 h2 {
     font-size: 3rem;
 }
+/* Style pada Header 3 */
 h3 {
     font-size: 2rem;
 }
