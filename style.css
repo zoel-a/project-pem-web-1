@@ -188,46 +188,161 @@ button {
 .contact {
     width: 100%;
     height: auto;
-    background-color: black;
+    background-color: rgb(15, 15, 15);
     padding: 10px;
 }
 
+/* kustomisasi wadah info & subscribe */
 .contact .wrapper {
     width: 35cm;
     height: auto;
     margin: auto;
     display: flex;
-    justify-content: space-between;
-    background-color: aqua;
+    justify-content: space-evenly;
 }
+/* akhir dari kustomisasi wadah */
 
+/* kustomisasi slot konten didalam wadah wrapper */
 .wrapper .contact-info {
     display: flex;
     width: 20cm;
-    height: 300px;
-    justify-content: space-between;
+    height: auto;
 }
 
 .contact-info .slot-info {
-    background-color: violet;
     width: 200px;
-    height: 200px;
+    height: auto;
+    margin-right: 20px;
+    padding: 10px;
 }
 
+.slot-info .slot-head {
+    font-weight: bold;
+    color: white;
+}
+
+/* kustomisasi pada logo sosial media */
+.slot-info .sos-logo {
+    color: white;
+    font-size: 18px;
+    margin-top: 50%;
+    margin-right: 50px;
+}
+
+.sos-logo i {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 2px;
+    transition: 0.5s ease;
+    margin-left: 3px;
+}
+
+/* kustomisasi hover pada logo sosial media */
+.sos-logo i:hover {
+    color: goldenrod;
+    border-color: goldenrod;
+    cursor: pointer;
+}
+/* akhir dari kustomisasi logo sosial media */
+
+/* kustomsiasi link pada slot-info */
+.slot-info li {
+    list-style: none;
+    padding: 3px;
+    text-decoration: none;
+}
+
+.slot-info li a { 
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    transition: 0.5s EASE;
+}
+
+/* kustomsiasi hover link pada slot-info */
+.slot-info li a:hover {
+    color: goldenrod;
+    font-size: 12px;
+}
+/* akhir dari kustomsiasi link pada slot-info */
+
+/* kustomsiasi slot subscribe */
 .wrapper .subscribe {
     width: 300px;
-    height: 200px;
-    background-color: violet;
+    height: auto;
+    padding: 10px;
 }
+
+.subscribe .sub-head {
+    color: goldenrod;
+    font-weight: bold;
+}
+
+.subscribe .sub-text {
+    color: white;
+    font-size: 15px;
+    margin-top: 26px;
+}
+/* akhir dari slot subscribe */
+
+/* bagian form input email */
+.subscribe .sub-email {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 26px;
+    width: 0;
+    background: white;
+}
+
+.sub-email .form-input {
+    border: 2px solid goldenrod;
+    background: none;
+    outline: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 5px;
+    color: gold;
+}
+
+.sub-email .btn-submit {
+    background: goldenrod;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.btn-submit i {
+    color: white;
+    margin: auto;
+    font-size: 25px;
+}
+/* akhir dari form input email */
+
 
 /* Akhir dari Contact */
 
 /* Footer */
 footer {
     text-align: center;
-    background-image: linear-gradient(to right, #00d4ff, #0f0f9d, #020024);
+    background: #000;
     color: white;
     padding: 10px;
+}
+
+footer .foot-wrap {
+    font-size: 14px;
+    word-spacing: 3px;
+    cursor: pointer;
+}
+
+.foot-wrap .foot-link {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.foot-wrap .foot-link:hover {
+    color: goldenrod;
 }
 /* Akhir dari Footer */
 
