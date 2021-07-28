@@ -1,378 +1,389 @@
 /* Memberi margin dan padding 0 pada seluruh halaman didalam dokumen HTML */
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 /* Style pada Body */
 body {
-    font-size: 18px;
-    background-image: url(img/background.png);
-    font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	background-image: url(img/background.png);
+	font-family: Arial, Helvetica, sans-serif;
 }
 /* Style pada Header 2 */
 h2 {
-    font-size: 3rem;
+	font-size: 3rem;
 }
 /* Style pada Header 3 */
 h3 {
-    font-size: 2rem;
+	font-size: 2rem;
 }
 
 /* Container */
 .container {
-    display: grid;
+	display: grid;
 }
+/* Style pada setiap class sub container yang ada pada setiap section */
 section .sub-container {
-    padding: 15rem 0;
+	padding: 15rem 0;
 }
+/* Style untuk setiap class row yang ada di dalam class sub-container */
 .sub-container .row {
-    text-align: center;
-    margin-bottom: 50px;
+	text-align: center;
+	margin-bottom: 50px;
 }
+/* Style untuk setiap class col yang ada didalam class row-col, yang berada pada class sub-container */
 .sub-container .row-col .col {
-    display: block;
-    text-align: justify;
+	display: block;
+	text-align: justify;
 }
+/* Style untuk setiap class row-col didalam class sub-container */
 .sub-container .row-col {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
 
 /* Navigasi */
 nav {
-    width: 100%;
+	width: 100%;
 }
+/* Style untuk class container-menu yang ada didalam class menu didalam nav */
 .menu .container-menu {
-    background-image: linear-gradient(to right, #00d4ff, #0f0f9d, #020024);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 25px;
+	background-image: linear-gradient(to right, #00d4ff, #0f0f9d, #020024);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 25px;
 }
+/* Style untuk class brand yang ada didalam class container-menu pada nav */
 .container-menu .brand {
-    padding: 3px;
-    text-align: center;
-    font-size: 1.5em;
-    color: white;
+	padding: 3px;
+	text-align: center;
+	font-size: 1.5em;
+	color: white;
 }
+/* Style untuk class menu-list yang ada pada class container-menu pada nav */
 .container-menu .menu-list {
-    list-style: none;
-    display: flex;
-    gap: 15px;
+	list-style: none;
+	display: flex;
+	gap: 15px;
 }
+/* Style untuk tag a pada class container-menu di nav */
 .container-menu a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 0.8em;
+	display: block;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.8em;
 }
+/* Style untuk class menu-list */
 .menu-list {
-    display: flex;
+	display: flex;
 }
+/* Style untuk tag a yang ada didalam class menu-list */
 .menu-list a {
-    padding: 5px;
+	padding: 5px;
 }
+/* Style untuk class search */
 .search {
-    display: flex;
+	display: flex;
 }
+/* Style untuk semua elemen yang ada pada tag form */
 form > * {
-    padding: 8px 5px;
-    border: none;
+	padding: 8px 5px;
+	border: none;
 }
+/* Style untuk tag button yang ada pada form, dan tag button */
 form button,
 button {
-    cursor: pointer;
+	cursor: pointer;
 }
 /* Akhir dari Navigasi */
 
 /* Jumbotron */
 .jumbotron-container .profil {
-    text-align: center;
-    padding: 15rem 1rem;
-    background-image: url(img/coop.jpg);
-    background-size: cover;
-    background-position: center;
+	text-align: center;
+	padding: 15rem 1rem;
+	background-image: url(img/coop.jpg);
+	background-size: cover;
+	background-position: center;
 }
 .jumbotron-container .profil > * {
-    margin: 10px;
+	margin: 10px;
 }
 .jumbotron-container .profil img {
-    border-radius: 50%;
-    border: 3px solid #ddd;
-    padding: 5px;
-    background-size: cover;
-    background-position: center;
+	border-radius: 50%;
+	border: 3px solid #ddd;
+	padding: 5px;
+	background-size: cover;
+	background-position: center;
 }
 .jumbotron-container .sub-container {
-    display: flex;
-    flex: 1;
-    align-items: center;
+	display: flex;
+	flex: 1;
+	align-items: center;
 }
 /* Akhir dari Jumbotron */
 
 /* About */
 .sub-container .row-col .col {
-    width: 30rem;
+	width: 30rem;
 }
 /* Akhir dari About */
 
 /* Products */
 .header .sub-container {
-    padding: 15rem 5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+	padding: 15rem 5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
 }
 .header .sub-container .row {
-    text-align: right;
+	text-align: right;
 }
 .header .sub-container .hero-container {
-    min-height: 400px;
-    background-image: url(img/mk1.jpg);
-    background-size: cover;
-    background-position: center;
-    border: 5px solid chocolate;
+	min-height: 400px;
+	background-image: url(img/mk1.jpg);
+	background-size: cover;
+	background-position: center;
+	border: 5px solid chocolate;
 }
 .header .sub-container .hero-container .hero {
-    padding: 15rem 5rem;
-    text-align: right;
+	padding: 15rem 5rem;
+	text-align: right;
 }
 .header .sub-container .products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-size: cover;
-    background-position: center;
-    gap: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-size: cover;
+	background-position: center;
+	gap: 50px;
 }
 .features {
-    color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 5px;
+	color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 5px;
 }
 .features img {
-    border: 5px solid chocolate;
-    margin-bottom: 15px;
+	border: 5px solid chocolate;
+	margin-bottom: 15px;
 }
 .features .price {
-    font-size: 2em;
-    font-weight: 200;
+	font-size: 2em;
+	font-weight: 200;
 }
 .info {
-    background-color: goldenrod;
-    margin-top: 15px;
-    padding: 10px;
-    font-size: 1.2rem;
-    width: 110px;
-    border: none;
-    border-radius: 5px;
+	background-color: goldenrod;
+	margin-top: 15px;
+	padding: 10px;
+	font-size: 1.2rem;
+	width: 110px;
+	border: none;
+	border-radius: 5px;
 }
 /* Akhir dari Products */
 
 /* Gallery */
 .gallery .sub-container .row-col .col {
-    border: 5px solid blueviolet;
+	border: 5px solid blueviolet;
 }
 .gallery .sub-container .row-col img {
-    max-width: 100%;
+	max-width: 100%;
 }
 /* Akhir dari Gallery */
 
 /* Contact */
 .contact {
-    width: 100%;
-    height: auto;
-    background-color: rgb(15, 15, 15);
-    padding: 10px;
+	width: 100%;
+	height: auto;
+	background-color: rgb(15, 15, 15);
+	padding: 10px;
 }
 
 /* kustomisasi wadah info & subscribe */
 .contact .wrapper {
-    width: 35cm;
-    height: auto;
-    margin: auto;
-    display: flex;
-    justify-content: space-evenly;
+	width: 35cm;
+	height: auto;
+	margin: auto;
+	display: flex;
+	justify-content: space-evenly;
 }
 /* akhir dari kustomisasi wadah */
 
 /* kustomisasi slot konten didalam wadah wrapper */
 .wrapper .contact-info {
-    display: flex;
-    width: 20cm;
-    height: auto;
+	display: flex;
+	width: 20cm;
+	height: auto;
 }
 
 .contact-info .slot-info {
-    width: 200px;
-    height: auto;
-    margin-right: 20px;
-    padding: 10px;
+	width: 200px;
+	height: auto;
+	margin-right: 20px;
+	padding: 10px;
 }
 
 .slot-info .slot-head {
-    font-weight: bold;
-    color: white;
+	font-weight: bold;
+	color: white;
 }
 
 /* kustomisasi pada logo sosial media */
 .slot-info .sos-logo {
-    color: white;
-    font-size: 18px;
-    margin-top: 50%;
-    margin-right: 50px;
+	color: white;
+	font-size: 18px;
+	margin-top: 50%;
+	margin-right: 50px;
 }
 
 .sos-logo i {
-    border: 2px solid white;
-    border-radius: 50%;
-    padding: 2px;
-    transition: 0.5s ease;
-    margin-left: 3px;
+	border: 2px solid white;
+	border-radius: 50%;
+	padding: 2px;
+	transition: 0.5s ease;
+	margin-left: 3px;
 }
 
 /* kustomisasi hover pada logo sosial media */
 .sos-logo i:hover {
-    color: goldenrod;
-    border-color: goldenrod;
-    cursor: pointer;
+	color: goldenrod;
+	border-color: goldenrod;
+	cursor: pointer;
 }
 /* akhir dari kustomisasi logo sosial media */
 
 /* kustomsiasi link pada slot-info */
 .slot-info li {
-    list-style: none;
-    padding: 3px;
-    text-decoration: none;
+	list-style: none;
+	padding: 3px;
+	text-decoration: none;
 }
 
-.slot-info li a { 
-    text-decoration: none;
-    color: white;
-    font-size: 13px;
-    transition: 0.5s EASE;
+.slot-info li a {
+	text-decoration: none;
+	color: white;
+	font-size: 13px;
+	transition: 0.5s EASE;
 }
 
 /* kustomsiasi hover link pada slot-info */
 .slot-info li a:hover {
-    color: goldenrod;
-    font-size: 12px;
+	color: goldenrod;
+	font-size: 12px;
 }
 /* akhir dari kustomsiasi link pada slot-info */
 
 /* kustomsiasi slot subscribe */
 .wrapper .subscribe {
-    width: 300px;
-    height: auto;
-    padding: 10px;
+	width: 300px;
+	height: auto;
+	padding: 10px;
 }
 
 .subscribe .sub-head {
-    color: goldenrod;
-    font-weight: bold;
+	color: goldenrod;
+	font-weight: bold;
 }
 
 .subscribe .sub-text {
-    color: white;
-    font-size: 15px;
-    margin-top: 26px;
+	color: white;
+	font-size: 15px;
+	margin-top: 26px;
 }
 /* akhir dari slot subscribe */
 
 /* bagian form input email */
 .subscribe .sub-email {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 26px;
-    width: 0;
-    background: white;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 26px;
+	width: 0;
+	background: white;
 }
 
 .sub-email .form-input {
-    border: 2px solid goldenrod;
-    background: none;
-    outline: none;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    padding: 5px;
-    color: gold;
+	border: 2px solid goldenrod;
+	background: none;
+	outline: none;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding: 5px;
+	color: gold;
 }
 
 .sub-email .btn-submit {
-    background: goldenrod;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-
+	background: goldenrod;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 
 .btn-submit i {
-    color: white;
-    margin: auto;
-    font-size: 25px;
+	color: white;
+	margin: auto;
+	font-size: 25px;
 }
 /* akhir dari form input email */
-
 
 /* Akhir dari Contact */
 
 /* Footer */
 footer {
-    text-align: center;
-    background: #000;
-    color: white;
-    padding: 10px;
+	text-align: center;
+	background: #000;
+	color: white;
+	padding: 10px;
 }
 
 footer .foot-wrap {
-    font-size: 14px;
-    word-spacing: 3px;
-    cursor: pointer;
+	font-size: 14px;
+	word-spacing: 3px;
+	cursor: pointer;
 }
 
 .foot-wrap .foot-link {
-    text-decoration: none;
-    color: white;
-    transition: 0.5s ease;
+	text-decoration: none;
+	color: white;
+	transition: 0.5s ease;
 }
 
 .foot-wrap .foot-link:hover {
-    color: goldenrod;
+	color: goldenrod;
 }
 /* Akhir dari Footer */
 
 /* Icon Hamburger Menu */
 .menu-toggle {
-    display: none;
-    flex-direction: column;
-    height: 20px;
-    justify-content: space-between;
-    position: relative;
+	display: none;
+	flex-direction: column;
+	height: 20px;
+	justify-content: space-between;
+	position: relative;
 }
 .menu-toggle span {
-    display: block;
-    width: 24px;
-    height: 3px;
-    background-color: white;
-    border-radius: 3px;
-    transition: all 0.5s;
+	display: block;
+	width: 24px;
+	height: 3px;
+	background-color: white;
+	border-radius: 3px;
+	transition: all 0.5s;
 }
 .menu-toggle input {
-    display: block;
-    position: absolute;
-    background-color: black;
-    width: 40px;
-    height: 28px;
-    left: -8px;
-    top: -4px;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 2;
+	display: block;
+	position: absolute;
+	background-color: black;
+	width: 40px;
+	height: 28px;
+	left: -8px;
+	top: -4px;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 2;
 }
 /* Akhir dari Icon Hamburger Menu */
 
@@ -380,9 +391,9 @@ footer .foot-wrap {
 
 /* Layar Setengah */
 @media (max-width: 1330px) {
-    .search {
-        display: none;
-    }
+	.search {
+		display: none;
+	}
 }
 
 /* Layar Tablet */
@@ -390,48 +401,48 @@ footer .foot-wrap {
 }
 /* Layar Mobile */
 @media (max-width: 500px) {
-    .sub-container .row-col {
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    .products .features {
-        display: flex;
-        flex-direction: column;
-    }
-    .features {
-        display: flex;
-        flex-direction: column;
-    }
-    .features .price {
-        font-size: 1.5em;
-    }
-    
-    /* Hamburger Menu */
-    
-    .menu-toggle {
-        display: flex;
-        align-items: flex-end;
-    }
-    nav ul {
-        position: absolute;
-        right: 0;
-        height: 100vh;
-        top: 0;
-        background-color: cornflowerblue;
-        width: 80%;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        z-index: -1;
-        transform: translateX(100%);
-        opacity: 0;
-        transition: all 1s;
-    }
-    nav ul.slide {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    /* Akhir dari Hamburger Menu */
+	.sub-container .row-col {
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	.products .features {
+		display: flex;
+		flex-direction: column;
+	}
+	.features {
+		display: flex;
+		flex-direction: column;
+	}
+	.features .price {
+		font-size: 1.5em;
+	}
+
+	/* Hamburger Menu */
+
+	.menu-toggle {
+		display: flex;
+		align-items: flex-end;
+	}
+	nav ul {
+		position: absolute;
+		right: 0;
+		height: 100vh;
+		top: 0;
+		background-color: cornflowerblue;
+		width: 80%;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		z-index: -1;
+		transform: translateX(100%);
+		opacity: 0;
+		transition: all 1s;
+	}
+	nav ul.slide {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	/* Akhir dari Hamburger Menu */
 }
 /* Akhir dari Responsive Break Point */
