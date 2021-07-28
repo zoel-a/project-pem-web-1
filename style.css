@@ -109,9 +109,11 @@ button {
 	background-size: cover;
 	background-position: center;
 }
+/* Style untuk class profil didalam class jumbotron-container */
 .jumbotron-container .profil > * {
 	margin: 10px;
 }
+/* Style untuk tag image yang ada pada class profil didalam class jumbotron-container */
 .jumbotron-container .profil img {
 	border-radius: 50%;
 	border: 3px solid #ddd;
@@ -119,6 +121,7 @@ button {
 	background-size: cover;
 	background-position: center;
 }
+/* Style untuk class sub-container pada class jumbotron-container */
 .jumbotron-container .sub-container {
 	display: flex;
 	flex: 1;
@@ -139,9 +142,11 @@ button {
 	flex-direction: column;
 	gap: 50px;
 }
+/* Style untuk class row didalam class sub-container yang ada pada class header */
 .header .sub-container .row {
 	text-align: right;
 }
+/* Style untuk class hero-container didalam class sub-container yang ada pada class header */
 .header .sub-container .hero-container {
 	min-height: 400px;
 	background-image: url(img/mk1.jpg);
@@ -149,10 +154,12 @@ button {
 	background-position: center;
 	border: 5px solid chocolate;
 }
+/* Style untuk class hero yang ada pada class hero-container didalam class sub-container yang dibungkus dengan class header */
 .header .sub-container .hero-container .hero {
 	padding: 15rem 5rem;
 	text-align: right;
 }
+/* Style untuk class products didalam class sub-container yang ada pada class header */
 .header .sub-container .products {
 	display: flex;
 	flex-wrap: wrap;
@@ -161,6 +168,7 @@ button {
 	background-position: center;
 	gap: 50px;
 }
+/* Style untuk class features */
 .features {
 	color: black;
 	display: flex;
@@ -169,14 +177,17 @@ button {
 	text-align: center;
 	gap: 5px;
 }
+/* Style untuk tag image yang ada didalam class features */
 .features img {
 	border: 5px solid chocolate;
 	margin-bottom: 15px;
 }
+/* Style untukg class price yang ada didalam class features */
 .features .price {
 	font-size: 2em;
 	font-weight: 200;
 }
+/* Style untuk class info */
 .info {
 	background-color: goldenrod;
 	margin-top: 15px;
@@ -189,15 +200,18 @@ button {
 /* Akhir dari Products */
 
 /* Gallery */
+/* Style untuk class col yang ada didalam class row-col pada class sub-container yang dibungkus dengan class gallery */
 .gallery .sub-container .row-col .col {
 	border: 5px solid blueviolet;
 }
+/* Style untuk tag image yang ada pada class row-col pada class sub-container yang dibungkus dengan class gallery */
 .gallery .sub-container .row-col img {
 	max-width: 100%;
 }
 /* Akhir dari Gallery */
 
 /* Contact */
+/* Style untuk class contact */
 .contact {
 	width: 100%;
 	height: auto;
@@ -419,7 +433,7 @@ footer .foot-wrap {
 	}
 	
 	/* Hamburger Menu */
-	
+
 	.menu-toggle {
 		display: flex;
 		align-items: flex-end;
