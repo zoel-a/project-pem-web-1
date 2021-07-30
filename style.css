@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 /* Style pada Body */
@@ -53,11 +54,16 @@ section .sub-container {
 /* Navigasi */
 nav {
     width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    display: block;
+    transition: 0.5s;
 }
 
 /* Style untuk class container-menu yang ada didalam class menu didalam nav */
 .menu .container-menu {
-    background-image: linear-gradient(to right, #00d4ff, #0f0f9d, #020024);
+    background: linear-gradient(to right, rgb(39, 39, 39), rgb(0, 0, 0));
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,6 +103,11 @@ nav {
 /* Style untuk tag a yang ada didalam class menu-list */
 .menu-list a {
     padding: 5px;
+    transition: 0.5s;
+}
+
+.menu-list a:hover {
+    color: goldenrod;
 }
 
 /* Style untuk class search */
@@ -105,15 +116,36 @@ nav {
 }
 
 /* Style untuk semua elemen yang ada pada tag form */
-form>* {
-    padding: 8px 5px;
-    border: none;
+.search .form-control {
+    border: 0.5px solid goldenrod;
+    background: goldenrod;
+    outline: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 10px;
+    color: white;
+}
+
+.search .form-control::placeholder {
+    color: white;
 }
 
 /* Style untuk tag button yang ada pada form, dan tag button */
-form button,
-button {
+.search .btn-search {
+    background: goldenrod;
+    outline: hidden;
+    padding: 5px;
+    border: 0.5px solid goldenrod;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
     cursor: pointer;
+}
+
+.btn-search i {
+    color: white;
+    margin-right: 5px;
+    font-size: 25px;
+    position: relative;
 }
 
 /* Akhir dari Navigasi */
@@ -172,6 +204,7 @@ button {
 
 /* Style untuk class hero-container didalam class sub-container yang ada pada class header */
 .header .sub-container .hero-container {
+    width: 100%;
     min-height: 400px;
     border-radius: 10px;
     background-image: url(img/mk1.jpg);
@@ -185,14 +218,25 @@ button {
     text-align: left;
 }
 
-.hero .heading,
-.typed-cursor {
-    font-size: 50px;
-    font-weight: bold;
-    color: goldenrod;
+.hero-container .hero {
+    position: absolute;
+    margin-top: -39rem;
 }
 
-.hero .topic {
+.hero-container .hero-cover {
+    width: 85rem auto;
+    height: 621px;
+    border-radius: 10px;
+    opacity: 60%;
+    background-color: rgb(39, 39, 39);
+}
+
+.hero .heading, .typed-cursor {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.hero .heading, .typed-cursor, .topic {
     color: goldenrod;
 }
 
@@ -431,21 +475,28 @@ button {
     border: 2px solid goldenrod;
     background: none;
     outline: none;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
     padding: 5px;
     color: gold;
 }
 
+.sub-email .form-input::placeholder {
+    color: goldenrod;
+}
+
 .sub-email .btn-submit {
     background: goldenrod;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    outline: none;
+    padding: 5px;
+    border: 2px solid goldenrod;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .btn-submit i {
     color: white;
-    margin: auto;
+    margin-right: 5px;
     font-size: 25px;
     position: relative;
 }
