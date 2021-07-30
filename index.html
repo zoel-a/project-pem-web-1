@@ -6,10 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<!-- Memanggil komponen Boxicons -->
 	<link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- Menghubungkan dengan file External CSS -->
+    <link rel="stylesheet" href="style.css" />
 	<title>Our Website</title>
-	
-	<!-- Menghubungkan dengan file External CSS -->
-	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 	<div class="container">
@@ -18,7 +18,7 @@
 			<div class="container-menu">
 				<!-- Logo Perusahaan -->
 				<div class="brand">
-					<a href="#jumbotron">Our Brand</a>
+					<a href="#home">Our Brand</a>
 				</div>
 				<!-- Menu List -->
 				<ul class="menu-list">
@@ -41,24 +41,29 @@
 		
 		<!-- Jumbotron -->
 		<section id="jumbotron">
-			<div class="slider-container">
-				<div class="background-slide">
-					<img src="/img/bg1.jpg">
-				</div>
-				<div class="background-slide">
-					<img src="/img/bg2.jpg">
-				</div>
-				<div class="background-slide">
-					<img src="/img/bg3.jpg">
-				</div>
-				<div class="jumbotron-container">
-					<div class="profil">
-						<img src="img/profil.jpg" alt="RASIS SQUAD" width="150px" />
-						<h1>RASIS SQUAD</h1>
-						<p>We Are Making a Custom Mechanical Keyboard</p>
-					</div>
-				</div>
-			</div>
+            <div class="jumbotron-container" id="home">
+                <div class="jumbotron-content">
+                    <div class="profil">
+                        <img src="img/profil.jpg" alt="RASIS SQUAD" width="150px" />
+                        <span class="title">RASIS SQUAD</span>
+                        <p>We Are Making a Custom Mechanical Keyboard....</p>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="slide slide1">
+                        <div class="slide-cover"></div>
+                    </div>
+                    <div class="slide slide2">
+                        <div class="slide-cover"></div>
+                    </div>
+                    <div class="slide slide3">
+                        <div class="slide-cover"></div>
+                    </div>
+                    <div class="slide slide4">
+                        <div class="slide-cover"></div>
+                    </div>
+                </div>
+            </div>
 		</section>
 		<!-- Akhir dari Jumbotron -->
 		
@@ -244,24 +249,12 @@
 		</footer>
 		<!-- Akhir dari footer -->
 	</div>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="/animated.js"></script>
-	<script>
-		var slideIndex = 0;
-		showSlides();
 
-		function showSlides() {
-		var i;
-		var slides = document.getElementsByClassName("background-slide");
-		for (i = 0; i < slides.length; i++) {
-			slides[i].style.display = "none";  
-		}
-		slideIndex++;
-		if (slideIndex > slides.length) {slideIndex = 1}
-		slides[slideIndex-1].style.display = "block";  
-		setTimeout(showSlides, 2000); // Change image every 2 seconds
-		}
-	</script>
+    <!-- menginisialisasi CDN typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- menginisialisasi script buatan -->
+    <script src="/animated.js"></script>
 </body>
 <!-- Akhir dari Body -->
 </html>

@@ -1,3 +1,6 @@
+/* import google font */
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Lobster&family=Shadows+Into+Light&family=Staatliches&display=swap');
+
 /* Memberi margin dan padding 0 pada seluruh halaman didalam dokumen HTML */
 * {
     margin: 0;
@@ -9,7 +12,7 @@
 body {
     font-size: 18px;
     background-image: url(img/background.png);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Asap', sans-serif;
 }
 
 /* Style pada Header 2 */
@@ -29,12 +32,12 @@ h3 {
 
 /* Style pada setiap class sub container yang ada pada setiap section */
 section .sub-container {
-    padding: 10rem 0;
-	margin: 10rem 0;
+    padding: 15rem 0;
 }
 
 /* Style untuk setiap class row yang ada di dalam class sub-container */
 .sub-container .row {
+    font-weight: bold;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -54,9 +57,10 @@ section .sub-container {
 
 /* Navigasi */
 nav {
+    /* visibility: hidden; */
     width: 100%;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     top: 0;
     display: block;
     transition: 0.5s;
@@ -75,6 +79,7 @@ nav {
 .container-menu .brand {
     padding: 3px;
     text-align: center;
+    font-weight: bold;
     font-size: 1.5em;
     color: white;
 }
@@ -152,57 +157,124 @@ nav {
 /* Akhir dari Navigasi */
 
 /* Jumbotron */
-
-/* Slider */
-.slider-container{
-	display: flex;
-	justify-content: center;
-}
-.slider-container, .background-slide {
-	height: 800px;
-	background-color: royalblue;
-	position: relative;
-}
-.background-slide {
-	width: 100%;
-	position: absolute;
-}
-.background-slide img{
-	width: 100%;
-	height: 100%;
-}
-/* Akhir dari Slider */
-
 .jumbotron-container {
-	display: flex;
-	justify-content: center;
-}
-.jumbotron-container .profil {
-	margin-top: 20rem;
-	text-align: center;
-	position: absolute;
-}
-/* Style untuk class profil didalam class jumbotron-container */
-.jumbotron-container .profil>* {
-    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
 }
 
-/* Style untuk tag image yang ada pada class profil didalam class jumbotron-container */
-.jumbotron-container .profil img {
+.jumbotron-container .jumbotron-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 15rem;
+    z-index: 2;
+}
+
+.jumbotron-content .profil {
+    display: grid;
+    justify-items: center;
+    color: goldenrod;
+}
+
+.profil .title {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Staatliches', cursive;
+}
+
+.profil p {
+    font-size: 30px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.profil img {
     border-radius: 50%;
-    border: 3px solid #ddd;
-    padding: 5px;
+}
+
+.jumbotron-container .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 100%;
+    animation: animate 15s linear infinite;
+}
+
+.jumbotron-container .slider .slide {
+    position: relative;
+    width: 20%;
+    height: 100%;
+    float: left;
+    background-color: goldenrod;
+}
+
+.jumbotron-container .slider .slide .slide-cover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #000;
+    opacity: 80%;
+}
+
+.jumbotron-container .slider .slide.slide1 {
+    background: url(https://www.spiria.com/site/assets/files/4406/taeha_type.jpg);
     background-size: cover;
     background-position: center;
 }
 
-/* Style untuk class sub-container pada class jumbotron-container */
-.jumbotron-container .sub-container {
-    display: flex;
-    flex: 1;
-    align-items: center;
+.jumbotron-container .slider .slide.slide2 {
+    background: url(https://i.redd.it/612pqp88xrc41.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
+.jumbotron-container .slider .slide.slide3 {
+    background: url(/img/bg3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.jumbotron-container .slider .slide.slide4 {
+    background: url(https://i.redd.it/di1wrts5fun11.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes animate {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+}
 /* Akhir dari Jumbotron */
 
 /* About */
@@ -214,7 +286,7 @@ nav {
 
 /* Products */
 .header .sub-container {
-    padding: 10rem 5rem;
+    padding: 15rem 5rem;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -553,3 +625,4 @@ footer .foot-wrap {
 }
 
 /* Akhir dari Footer */
+
