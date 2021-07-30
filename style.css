@@ -29,7 +29,8 @@ h3 {
 
 /* Style pada setiap class sub container yang ada pada setiap section */
 section .sub-container {
-    padding: 15rem 0;
+    padding: 10rem 0;
+	margin: 10rem 0;
 }
 
 /* Style untuk setiap class row yang ada di dalam class sub-container */
@@ -151,14 +152,36 @@ nav {
 /* Akhir dari Navigasi */
 
 /* Jumbotron */
-.jumbotron-container .profil {
-    text-align: center;
-    padding: 15rem 1rem;
-    background-image: url(img/coop.jpg);
-    background-size: cover;
-    background-position: center;
-}
 
+/* Slider */
+.slider-container{
+	display: flex;
+	justify-content: center;
+}
+.slider-container, .background-slide {
+	height: 800px;
+	background-color: royalblue;
+	position: relative;
+}
+.background-slide {
+	width: 100%;
+	position: absolute;
+}
+.background-slide img{
+	width: 100%;
+	height: 100%;
+}
+/* Akhir dari Slider */
+
+.jumbotron-container {
+	display: flex;
+	justify-content: center;
+}
+.jumbotron-container .profil {
+	margin-top: 20rem;
+	text-align: center;
+	position: absolute;
+}
 /* Style untuk class profil didalam class jumbotron-container */
 .jumbotron-container .profil>* {
     margin: 10px;
@@ -191,7 +214,7 @@ nav {
 
 /* Products */
 .header .sub-container {
-    padding: 15rem 5rem;
+    padding: 10rem 5rem;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -530,103 +553,3 @@ footer .foot-wrap {
 }
 
 /* Akhir dari Footer */
-
-/* Icon Hamburger Menu */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    height: 20px;
-    justify-content: space-between;
-    position: relative;
-}
-
-.menu-toggle span {
-    display: block;
-    width: 24px;
-    height: 3px;
-    background-color: white;
-    border-radius: 3px;
-    transition: all 0.5s;
-}
-
-.menu-toggle input {
-    display: block;
-    position: absolute;
-    background-color: black;
-    width: 40px;
-    height: 28px;
-    left: -8px;
-    top: -4px;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 2;
-}
-
-/* Akhir dari Icon Hamburger Menu */
-
-/* Responsive Breakpoint */
-
-/* Layar Setengah */
-@media (max-width: 1330px) {
-    .search {
-        display: none;
-    }
-}
-
-/* Layar Tablet */
-@media (max-width: 768px) {}
-
-/* Layar Mobile */
-@media (max-width: 500px) {
-    .sub-container .row-col {
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    .products .features {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .features {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .features .price {
-        font-size: 1.5em;
-    }
-
-    /* Hamburger Menu */
-
-    .menu-toggle {
-        display: flex;
-        align-items: flex-end;
-    }
-
-    nav ul {
-        position: absolute;
-        right: 0;
-        height: 100vh;
-        top: 0;
-        background-color: cornflowerblue;
-        width: 80%;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        z-index: -1;
-        transform: translateX(100%);
-        opacity: 0;
-        transition: all 1s;
-    }
-
-    nav ul.slide {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-    /* Akhir dari Hamburger Menu */
-}
-
-/* Akhir dari Responsive Break Point */

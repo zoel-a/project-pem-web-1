@@ -18,7 +18,7 @@
 			<div class="container-menu">
 				<!-- Logo Perusahaan -->
 				<div class="brand">
-					<a href="#home">Our Brand</a>
+					<a href="#jumbotron">Our Brand</a>
 				</div>
 				<!-- Menu List -->
 				<ul class="menu-list">
@@ -35,24 +35,28 @@
                         <i class='bx bx-search-alt-2'></i>
                     </button>
 				</form>
-				<!-- Hamburger Menu Icon -->
-				<div class="menu-toggle">
-					<input type="checkbox" />
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
 			</div>
 		</nav>
 		<!-- Akhir dari Navbar -->
 		
 		<!-- Jumbotron -->
 		<section id="jumbotron">
-			<div class="jumbotron-container">
-				<div class="profil">
-					<img src="img/profil.jpg" alt="RASIS SQUAD" width="150px" />
-					<h1>RASIS SQUAD</h1>
-					<p>We Are Making a Custom Mechanical Keyboard</p>
+			<div class="slider-container">
+				<div class="background-slide">
+					<img src="/img/bg1.jpg">
+				</div>
+				<div class="background-slide">
+					<img src="/img/bg2.jpg">
+				</div>
+				<div class="background-slide">
+					<img src="/img/bg3.jpg">
+				</div>
+				<div class="jumbotron-container">
+					<div class="profil">
+						<img src="img/profil.jpg" alt="RASIS SQUAD" width="150px" />
+						<h1>RASIS SQUAD</h1>
+						<p>We Are Making a Custom Mechanical Keyboard</p>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -242,6 +246,22 @@
 	</div>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="/animated.js"></script>
+	<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		var i;
+		var slides = document.getElementsByClassName("background-slide");
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		}
+		slideIndex++;
+		if (slideIndex > slides.length) {slideIndex = 1}
+		slides[slideIndex-1].style.display = "block";  
+		setTimeout(showSlides, 2000); // Change image every 2 seconds
+		}
+	</script>
 </body>
 <!-- Akhir dari Body -->
 </html>
