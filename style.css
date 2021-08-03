@@ -438,18 +438,36 @@ nav {
 
 /* Akhir dari Products */
 
-/* Gallery */
-/* Style untuk class col yang ada didalam class row-col pada class sub-container yang dibungkus dengan class gallery */
-.gallery .sub-container .row-col .col {
-    border: 5px solid blueviolet;
+/* !Gallery */
+/* *Style untuk class col yang ada didalam class row-col pada class sub-container yang dibungkus dengan class gallery */
+.gallery .sub-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 20rem;
 }
 
-/* Style untuk tag image yang ada pada class row-col pada class sub-container yang dibungkus dengan class gallery */
-.gallery .sub-container .row-col img {
-    max-width: 100%;
+.gallery .sub-container .gallery-slide {
+    position: absolute;
+    width: 500%;
+    animation: animate 15s linear infinite;
 }
 
-/* Akhir dari Gallery */
+.gallery-slide .row-col.gallery-slide-content { 
+    width: 20%;
+    position: relative;
+    float: left;
+}
+
+.gallery-slide .row-col .col .col-item{
+    margin-left: 40px;
+    width: 400px;
+    height: 265px;
+    border-radius: 10px;
+    background-color: navy;
+    cursor: pointer;
+}
+/* !Akhir dari Gallery */
 
 /* Contact */
 /* Style untuk class contact */
