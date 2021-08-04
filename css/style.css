@@ -80,7 +80,7 @@ nav {
 	padding: 3px;
 	text-align: center;
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 2em;
 	color: white;
 }
 
@@ -627,6 +627,7 @@ nav {
 	border-bottom-left-radius: 50px;
 	padding: 5px;
 	color: gold;
+	padding-left: 15px;
 }
 
 .sub-email .form-input::placeholder {
