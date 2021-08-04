@@ -7,11 +7,11 @@
 	<!-- !Memanggil komponen Boxicons -->
 	<link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
 	
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-	
+	<!-- !Menginisialisasi pendukung cdn lightslider / komponen pendukung lightslider.js -->
+	<link rel="stylesheet" href="css/lightslider.css">
 	
 	<!-- !Menghubungkan dengan file External CSS -->
-	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="css/style.css" />
 	<title>Our Website</title>
 </head>
 <body>
@@ -29,7 +29,6 @@
 					<li><a href="#products">Products</a></li>
 					<li><a href="#gallery">Gallery</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<li><a href="#">News</a></li>
 				</ul>
 				<!-- Kolom Pencarian -->
 				<form class="search">
@@ -167,46 +166,62 @@
 		
 		<!-- !Gallery -->
 		<section class="gallery" id="gallery">
-			<div class="sub-container">
-				<div class="row">
+			<div class="head">
 					<h2>Gallery</h2>
 				</div>
-				<!-- Row untuk galeri -->
-				<div class="gallery-slide">
-					<div class="row-col gallery-slide-content" >
-						<div class="col">
-							<div class="col-item"></div>
+			<div class="sub-container">
+				<!-- *Row untuk galeri -->
+				<!-- memanggil komponen slider -->
+				<ul id="responsive">
+					<li class="item-a">
+						<!-- slider box pada gallery -->
+						<div class="box">
+							<div class="box-cover"></div>
+							<img src="/img/glr1.jpg" class="box-image">
+							<button class="info" type="button">More Info</button>
 						</div>
-						<div class="col">
-							<div class="col-item"></div>
+					</li>
+										<li class="item-a">
+						<!-- slider box pada gallery -->
+						<div class="box">
+							<div class="box-cover"></div>
+							<img src="/img/glr2.jpg" class="box-image">
+							<button class="info" type="button">More Info</button>
 						</div>
-						<div class="col">
-							<div class="col-item"></div>
+					</li>
+										<li class="item-a">
+						<!-- slider box pada gallery -->
+						<div class="box">
+							<div class="box-cover"></div>
+							<img src="/img/glr3.jpg" class="box-image">
+							<button class="info" type="button">More Info</button>
 						</div>
-					</div>
-					<div class="row-col gallery-slide-content">
-						<div class="col">
-							<div class="col-item"></div>
+					</li>
+										<li class="item-a">
+						<!-- slider box pada gallery -->
+						<div class="box">
+							<div class="box-cover"></div>
+							<img src="/img/glr1.jpg" class="box-image">
+							<button class="info" type="button">More Info</button>
 						</div>
-						<div class="col">
-							<div class="col-item"></div>
+					</li>
+										<li class="item-a">
+						<!-- slider box pada gallery -->
+						<div class="box">
+							<div class="box-cover"></div>
+							<img src="/img/glr2.jpg" class="box-image">
+							<button class="info" type="button">More Info</button>
 						</div>
-						<div class="col">
-							<div class="col-item"></div>
+					</li>
+										<li class="item-a">
+						<!-- slider box pada gallery -->
+						<div class="box">
+							<div class="box-cover"></div>
+							<img src="/img/glr3.jpg" class="box-image">
+							<button class="info" type="button">More Info</button>
 						</div>
-					</div>
-					<div class="row-col gallery-slide-content">
-						<div class="col">
-							<div class="col-item"></div>
-						</div>
-						<div class="col">
-							<div class="col-item"></div>
-						</div>
-						<div class="col">
-							<div class="col-item"></div>
-						</div>
-					</div>
-				</div>
+					</li>
+				</ul>
 			</div>
 		</section>
 		<!-- !Akhir dari Gallery -->
@@ -277,11 +292,17 @@
 		<!-- !Akhir dari footer -->
 	</div>
 	
+	<!-- !menginisialisasi CDN jQuery.js -->
+	<script src="js/JQuery3.3.1.js"></script>
+	
+	<!-- !menginisialisasi CDN lightslider.js -->
+	<script src="js/lightslider.js"></script>
+	
 	<!-- !menginisialisasi CDN typed.js -->
 	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 	
 	<!-- !menginisialisasi script buatan -->
-	<script src="/animated.js"></script>
+	<script src="js/animated.js"></script>
 </body>
 <!-- Akhir dari Body -->
 </html>
